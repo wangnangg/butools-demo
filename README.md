@@ -1,5 +1,13 @@
 # Butools Demo
 
+这个demo演示了如何使用Butools来做Phase Type Fitting. 在demo.py中, 我们首先从
+pareto分布中采样了10000个点 (把它们叫做一个trace). 然后, 我们分别使用了含有3个,
+5个, 7个transient states的连续时间马尔科夫链来fit这个trace. 最后, 我们对比了原始
+trace的经验分布函数(Empirical CDF)和fit出来的分布函数(fitted CDF), 可以看到, 随
+着使用的state数量增多, fit效果在变好.
+
+## 步骤
+
 1. clone本仓库.
 
 ```
